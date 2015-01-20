@@ -25,7 +25,19 @@ p {
 p.large {
     font-size: 16px;
 }
-
+th {
+  background-color:#CCC;
+  text-align:center;
+}
+td.gray{
+    background-color:#f2f2f2;
+}
+td.centered{
+    text-align:center;
+}
+.fa-check{
+    color:green;
+}
 a,
 a:hover,
 a:focus,
@@ -232,7 +244,7 @@ fieldset[disabled] .btn-xl.active {
 
 @media(min-width:768px) {
     .navbar-default {
-        padding: 25px 0;
+        padding: 10px 0;
         border: 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
@@ -262,7 +274,7 @@ fieldset[disabled] .btn-xl.active {
 
 header {
     text-align: center;
-    padding: 100px 0;
+    padding: 70px 0;
 }
 
 

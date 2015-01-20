@@ -55,16 +55,19 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#workflow">Workflow</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#build">Build</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#sync">Sync</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#test">Test</a>
+                        <a class="page-scroll" href="#test">Test and Debug</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#debug">Debug</a>
+                        <a class="page-scroll" href="#deploy">Deploy</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#about">About</a>
@@ -84,42 +87,133 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="intro-text">PhoneGap vs. Cordova vs. AppBuilder</h2>
+                    <h2 class="intro-text">PhoneGap, Cordova and AppBuilder</h2>
                     <h3 class="intro-leadin">What's the difference?</h3>
                 </div>
             </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                        <img src="img/logos/appbuilder.png" alt="AppBuilder">
-                    <h4 class="service-heading">AppBuilder</h4>
-                    <p class="text-muted">Telerik AppBuilder is a cross-platform set of tools to build apps for iOS, Android and Windows Phone using an instantly available, hyper productive PhoneGap/Cordova development environment.</p>
-                </div>
-                <div class="col-md-4">                       
-                    <img src="img/logos/cordova.png" alt="Cordova">
-                    <h4 class="service-heading">Cordova</h4>
-                    <p class="text-muted">Apache Cordova is a set of device APIs that allow a mobile app developer to access native device function such as the camera or accelerometer from JavaScript. Combined with a UI framework, this allows a smartphone app to be developed with just HTML, CSS, and JavaScript.</p>
-                </div>
-                <div class="col-md-4">
-                    <img src="img/logos/phonegap.png" alt="PhoneGap">
-                    <h4 class="service-heading">PhoneGap</h4>
-                    <p class="text-muted">PhoneGap is an open source solution for building cross-platform mobile apps with standards-based Web technologies like HTML, JavaScript, CSS.</p>
-                </div>                
-            </div>
+
             <div class="row text-center">
                 <div class="col=md-12">
                     <h4>Based on Cordova</h4>
-                    <p class="text">Phonegap is a distribution of Apache Cordova. Cordova powers PhoneGap, just like WebKit powers Chrome and Safari. You can build PhoneGap apps using the Command Line Interface (CLI). AppBuilder is a platform that supports Cordova APIs and many different ways of building and distributing apps. With AppBuilder, you can use Cordova core plugins like the accelerometer, camera, compass or the file system to access cross-platform native functionality in your AppBuilder-built app. You also can use community-built Cordova custom plugins for add-on functionality such as bar code scanners and iBeacon readers from the curated Telerik Plugin Marketplace.</p>
+                    <p class="text">PhoneGap is a distribution of Apache Cordova. Cordova powers PhoneGap, just like WebKit powers Chrome and Safari. AppBuilder is a platform that supports Cordova APIs and enables many different ways of building and distributing apps. Both PhoneGap and AppBuilder feature the integration of Cordova plugins like the accelerometer, camera, compass or the file system to access cross-platform native functionality. You also can use community-built Cordova custom plugins for added functionality such as bar code scanners and iBeacon readers. You can build great hybrid mobile apps using any of these tools. This site, built by members of the Developer Relations team at Telerik, is designed to help you differentiate between them.</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="img/logos/appbuilder.png" alt="AppBuilder">
+                    <h4 class="service-heading"><a href="http://www.telerik.com/appbuilder" target="_blank">AppBuilder</a></h4>
+                    <p class="text-muted">Telerik AppBuilder incorporates an extensive set of tools to build apps for iOS, Android and Windows Phone using a variety of strategies including the CLI, building in-browser, desktop apps, or as plugins for your preferred IDE.</p>
+                </div>
+                <div class="col-md-4">                       
+                    <img src="img/logos/cordova.png" alt="Cordova">
+                    <h4 class="service-heading"><a href="http://cordova.apache.org/" target="_blank">Cordova</a></h4>
+                    <p class="text-muted">Apache Cordova is a set of device APIs for iOS, Android, Blackberry, Windows Phone, Palm WebOS, Bada, and Symbian that allows a mobile app developer to access native device functionality from JavaScript. Combined with a UI framework, Cordova allows you to build mobile apps with HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/logos/phonegap.png" alt="PhoneGap">
+                    <h4 class="service-heading"><a href="http://phonegap.com/" target="_blank">PhoneGap</a></h4>
+                    <p class="text-muted">PhoneGap is a solution for building cross-platform mobile apps using HTML, JavaScript, and CSS. It is an open-source distribution of Cordova that is managed by the Apache Foundation.</p>
+                </div>                
+            </div>
+            
+        </div>
+    </header>
+
+    <section id="workflow" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Workflow</h2>
+                    <h3 class="section-subheading text-muted">How can I start developing a mobile app using PhoneGap vs. AppBuilder? What are my workflow options?</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 portfolio-item">
+                    
+                    <img src="img/portfolio/PG-build.png" class="img-responsive" alt="">
+                   
+                    <div class="portfolio-caption">
+                        <h4>PhoneGap</h4>
+                        <p class="text-muted">After installing PhoneGap on your local computer, you can start building a new mobile app using a few CLI commands. Alternately, you can use the beta desktop client and drop your PhoneGap app into it to manage your app workflow. The app will then run on an IP address on your local machine for easy debugging.Many popular IDEs have PhoneGap plugins developed as well.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 portfolio-item">
+                    
+                        <img src="img/portfolio/AB-build.png" class="img-responsive" alt="">
+                   
+                    <div class="portfolio-caption">
+                        <h4>AppBuilder</h4>
+                        <p class="text-muted">AppBuilder offers an integrated solution to deliver mobile apps from concept to App store. You can develop apps using the CLI, the in-browser Platform, Sublime Text plugins, Visual Studio plugins or the Windows client. You can start your app work in the CLI, push to a Github repository, import that repository into the in-browser Platform, and continue work there.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <table class="table">  
+                            <thead>  
+                              <tr> 
+                                <th></th> 
+                                <th>PhoneGap</th>  
+                                <th>AppBuilder</th>  
+                              </tr>  
+                            </thead>  
+                            <tbody>  
+                              <tr>
+                                <td class="gray">CLI</td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>                  
+                              </tr>  
+                              <tr>
+                                <td class="gray">Browser-based toolset</td>  
+                                <td> </td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>                             
+                              </tr>
+                              <tr>  
+                                <td class="gray">Desktop App</td>  
+                                <td class="centered"><i class="fa fa-check"></i></td> 
+                                <td> </td>  
+                              </tr>  
+                              <tr>  
+                                <td class="gray">Sublime Text Plugin</td><td> </td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>                         
+                              </tr> 
+                              <tr>  
+                                <td class="gray">Adobe Brackets Plugin</td>  
+                                <td class="centered"><i class="fa fa-check"></i></td> 
+                                <td> </td>  
+                              </tr> 
+                              <tr>  
+                                <td class="gray">Eclipse Plugin</td>  
+                                <td class="centered"><i class="fa fa-check"></i></td> 
+                                <td> </td>  
+                              </tr>
+                              <tr>  
+                                <td class="gray">JetBrains IntelliJ Plugin</td>  
+                                <td class="centered"><i class="fa fa-check"></i></td> 
+                                <td> </td>  
+                              </tr> 
+                              <tr>  
+                                <td class="gray">Visual Studio Plugin</td><td> </td> 
+                                <td class="centered"><i class="fa fa-check"></i></td> 
+                              </tr>
+                              <tr>  
+                                <td class="gray">Windows Client</td>
+                                <td> </td> 
+                                <td class="centered"><i class="fa fa-check"></i></td> 
+                              </tr> 
+                            </tbody>  
+                        </table> 
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
     <section id="build" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Build</h2>
-                    <h3 class="section-subheading text-muted">What's the difference between PhoneGap Build and AppBuilder?</h3>
+                    <h3 class="section-subheading text-muted">I need to build a version of my app. What's the difference between using PhoneGap Build and AppBuilder?</h3>
                 </div>
             </div>
             <div class="row">
@@ -129,7 +223,7 @@
                    
                     <div class="portfolio-caption">
                         <h4>PhoneGap Build</h4>
-                        <p class="text-muted">PhoneGap Build is a service associated with PhoneGap. Using PhoneGap Build, the developer uploads a project's web assets either in ZIP format or a single page, and the service compiles and packages an app. The developer then receives the download URLs for all platforms to test the app on a device. Alternately, the developer can configure the service to point to an opensource git repository and perform builds from that endpoint. According to the type of app being built (opensource or private), the number of apps and the plugins that can be integrated may be limited.</p>
+                        <p class="text-muted">PhoneGap developers might choose to use PhoneGap Build to build a testable and deployable version of their app. Using PhoneGap Build's web site, you upload a project's web assets in .zip format and the service compiles and packages an app. The developer then receives the download URLs for all platforms to test the app on a device. Alternately, the developer can configure the service to point to an opensource git repository and perform builds from that endpoint.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 portfolio-item">
@@ -138,7 +232,42 @@
                    
                     <div class="portfolio-caption">
                         <h4>AppBuilder</h4>
-                        <p class="text-muted">AppBuilder is an end-to-end solution to deliver mobile apps from concept to App store. You can develop apps using the CLI, the in-browser client, Sublime Text plugins, Visual Studio plugins or the Windows client. AppBuilder includes a large array of tools to aid in the building and distribution of mobile apps, including an in-browser JavaScript-based authoring tool, the ability to simultaneously build a mobile website alongside your app, backend services for data storage, and add-on modules for Analytics, App Feedback, and Prototyping. It is designed to be a one-stop shop for mobile app building, testing, and delivery to production.</p>
+                        <p class="text-muted">Depending on how you prefer to develop your app, AppBuilder offers several different ways to build your app from code to deployable app. You can use the CLI commands to build a version of your app onto your local machine, or use the in-browser toolset to click 'build' to build a version of your app to install in the Companion App or directly to your device. Visual Studio users can build from that environment, as can Windows client users.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <table class="table">  
+                            <thead>  
+                              <tr> 
+                                <th></th> 
+                                <th>PhoneGap</th>  
+                                <th>AppBuilder</th>  
+                              </tr>  
+                            </thead>  
+                            <tbody>  
+                              <tr>
+                                <td class="gray">Build from command line</td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>                  
+                              </tr>  
+                              <tr>
+                                <td class="gray">Build from browser-based tools</td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>                             
+                              </tr>
+                              <tr>  
+                                <td class="gray">Build from IDEs</td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>  
+                              </tr>  
+                              <tr>  
+                                <td class="gray">Build from Windows client</td><td> </td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>                         
+                              </tr> 
+                               
+                            </tbody>  
+                        </table> 
                     </div>
                 </div>
             </div>
@@ -160,8 +289,8 @@
                         <img src="img/portfolio/PG-hydrate.png" class="img-responsive" alt="">
                    
                     <div class="portfolio-caption">
-                        <h4>PhoneGap Build Hydration</h4>
-                        <p class="text-muted">PhoneGap Build is excited to offer Hydration to its users. Using Hydration, updates are pushed directly to the application installed on a device. PhoneGap accomplishes this by compiling a native binary that acts as a container for your mobile application. Once a developer uploads a new build the end user of the application will be notified when restarting the application. If the end user decides to run the new code base, the Hydrated app will automatically fetch and run the latest code base.</p>
+                        <h4>PhoneGap Syncing</h4>
+                        <p class="text-muted">When enabled in PhoneGap Build, "hydration" is available to PhoneGap app developers. Using Hydration, updates are pushed directly to the application installed on a device.Once a developer uploads a new build the end user of the application will be notified when restarting the application. Using the PhoneGap App, syncing occurs over wireless connections when you pair your computer to the installed app, which acts as a container for your app.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 portfolio-item">
@@ -170,7 +299,37 @@
                    
                     <div class="portfolio-caption">
                         <h4>AppBuilder LiveSync</h4>
-                        <p class="text-muted">LiveSync enables developers to see code changes they make in real-time in both the Icenium Device Simulator and any connected mobile devices. There is no need to rebuild and redeploy the project; nor is there a need to reload the project on the devices. When you deploy your application on connected physical or virtual devices, you can refresh your changes automatically by saving your changes.When you deploy your application in the AppBuilder companion app on remote devices, you can refresh your changes by tapping and holding three fingers.Note, for changes to plugins, configurations, or base assets like icons, you do need to rebuild and refresh the app on your device as live sync won't pick up those changes.</p>
+                        <p class="text-muted">LiveSync enables you to see your code changes in real-time on connected mobile devices. When you deploy your application on connected physical or virtual devices, you can refresh your changes automatically by saving your changes. When you deploy your application in the AppBuilder Companion App on remote devices, you can refresh your changes by tapping and holding three fingers.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <table class="table">  
+                            <thead>  
+                              <tr> 
+                                <th></th> 
+                                <th>PhoneGap</th>  
+                                <th>AppBuilder</th>  
+                              </tr>  
+                            </thead>  
+                            <tbody>  
+                              <tr>
+                                <td class="gray">Automatic refreshing of simulator on code change</td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>                  
+                              </tr>  
+                              <tr>
+                                <td class="gray">Manual refreshing on device on code change</td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>                             
+                              </tr>
+                              <tr>  
+                                <td class="gray">Wireless refreshing on device on code change</td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>  
+                                <td> </td>  
+                              </tr>                                
+                            </tbody>  
+                        </table> 
                     </div>
                 </div>
             </div>
@@ -183,8 +342,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Test</h2>
-                    <h3 class="section-subheading text-muted">How can you test a mobile app using PhoneGap vs. AppBuilder?</h3>
+                    <h2 class="section-heading">Test and Debug</h2>
+                    <h3 class="section-subheading text-muted">Yikes, something's not working! How can you test and debug a mobile app using PhoneGap vs. AppBuilder?</h3>
                 </div>
             </div>
             <div class="row">
@@ -194,7 +353,7 @@
                    
                     <div class="portfolio-caption">
                         <h4>PhoneGap Emulation</h4>
-                        <p class="text-muted">There are several ways to test an app's behavior. By typing 'phonegap emulate ios' you can see how your app looks on an iOS simulator, and similarly for Android emulators. PhoneGap Build offers a quick way to download builds for testing on a device, but you do need to include provisioning profiles for your iOS testers.</p>
+                        <p class="text-muted">There are several ways to test an app's behavior. By typing 'phonegap emulate ios' in the command line you can see how your app looks on an iOS simulator, and similarly for Android emulators. PhoneGap Build offers a quick way to download builds for testing on a device, but you do need to include provisioning profiles for your iOS testers. The new PhoneGap app allows wireless emulation. Also available is an emulation service where you can enter a url and use Chrome's developer tools to debug. This emulation requires the Chrome browser and the Ripple emulation extension to be installed. Alternately, simply using Chrome's Dev Tools with the Device Emulation extension installed helps considerably to test your app. For on-device debugging you can make use of Safari's Developer Tools to debug remote code for iOS apps. For other devices, you can also use Weinre to get an idea of bugs that occur on a device. Finally, you can always use native development tools such as Xcode's console and Android's 'adb' toolset to debug.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 portfolio-item">
@@ -203,7 +362,47 @@
                    
                     <div class="portfolio-caption">
                         <h4>AppBuilder</h4>
-                        <p class="text-muted">AppBuilder offers out-of-the-box a large selection of simulation options, including many device sizes and types and Windows Phone. You can both simulate an app's behavior using AppBuilder's built-in simulators or emulate the app using native simulators associated with Android, Windows Phone, and Xcode. In addition, when you're ready to test on device, AppBuilder offers the Companion App, a way for you to test your app on a device without provisioning, which eases iOS development in particular. Finally, you can build and deploy for device from either the CLI or AppBuilder's in-browser toolset.</p>
+                        <p class="text-muted">AppBuilder offers out-of-the-box a large selection of simulation options, including the ability to easily view many device sizes and types as well as Windows Phone. You can view an app's behavior using AppBuilder's built-in simulators or emulate the app using native simulators associated with Android, Windows Phone, and Xcode. In addition, when you're ready to test on device, AppBuilder offers the Companion App, a way for you to test your app on a device without provisioning, which eases iOS development in particular. Appbuilder includes several options for debugging yor app in a browser. You can use built-in developer tools to check javascript performance by inspecting the code in a browser on your local machine. Similar to PhoneGap, you can debug your app using Chrome or Safari developer tools or native software solutions. In addition, AppBuilder offers a suite of sophisticated testing tools. The new Test Portal allows you to write JavaScript test scripts and run them on devices in the cloud, greatly expanding the number of virtual devices on which to test apps.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <table class="table">  
+                            <thead>  
+                              <tr> 
+                                <th></th> 
+                                <th>PhoneGap</th>  
+                                <th>AppBuilder</th>  
+                              </tr>  
+                            </thead>  
+                            <tbody>  
+                              <tr>
+                                <td class="gray">Test locally on a simulator</td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>                  
+                              </tr> 
+                              <tr>
+                                <td class="gray">Test locally using browser-based developer tools</td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>                  
+                              </tr>  
+                              <tr>
+                                <td class="gray">Test on device using an app wrapper</td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>                             
+                              </tr>
+                              <tr>  
+                                <td class="gray">Build to device and debug using native tools</td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>  
+                              </tr>  
+                              <tr>  
+                                <td class="gray">Test in the cloud</td>  
+                                <td> </td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>  
+                              </tr>                                
+                            </tbody>  
+                        </table> 
                     </div>
                 </div>
             </div>
@@ -214,8 +413,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Debug</h2>
-                    <h3 class="section-subheading text-muted">How can you debug a mobile app using PhoneGap vs. AppBuilder?</h3>
+                    <h2 class="section-heading">Deploy</h2>
+                    <h3 class="section-subheading text-muted">How can you deploy your app to the various App Stores using PhoneGap vs. AppBuilder?</h3>
                 </div>
             </div>
             <div class="row">
@@ -224,8 +423,8 @@
                     <img src="img/portfolio/PG-ripple.png" class="img-responsive" alt="">
                    
                     <div class="portfolio-caption">
-                        <h4>PhoneGap Debugging with Ripple</h4>
-                        <p class="text-muted">PhoneGap offers an emulation service at emulate.phonegap.com where you can enter a url for the service to emulate. This emulation requires the Chrome browser and the Ripple emulation extension to be installed. Alternately, simply using Chrome's Dev Tools with the Device Emulation extension installed helps considerably to test your app.</p>
+                        <h4>PhoneGap</h4>
+                        <p class="text-muted">Once your app is complete, you can either build the app via native tools like Xcode and Android Studio or use PhoneGap build to deliver to you a properly-provisioned file. You will then deliver that file to the various app stores (iOS, Android, or Windows Phone) manually. Then you can complete the delivery of the app into production by adding the app assets into the various app stores.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 portfolio-item">
@@ -233,8 +432,40 @@
                         <img src="img/portfolio/AB-testportal.png" class="img-responsive" alt="">
                    
                     <div class="portfolio-caption">
-                        <h4>AppBuilder Debugging Options</h4>
-                        <p class="text-muted">Appbuilder includes several options for debugging yor app. First, it includes the ability to check javascript performance by inspecting the code in a Chrome browser on your local machine similar to PhoneGap's. Second, AppBuilder offers a suite of sophisticated testing tools. The new Test Portal allows developers to write JavaScript test scripts and run them on devices in the cloud, greatly expanding the number of virtual devices on which to test apps.</p>
+                        <h4>AppBuilder</h4>
+                        <p class="text-muted">AppBuilder includes several helpful tools to ease the process of deploying your app to the various stores. From the CLI or the in-browser tools, you can build your properly-provisioned app and it will be automatically delivered to the app store of your choice by AppBuilder. AppBuilder also includes tools to help you create your splash screens and icons and handy methods to handle app provisioning from within the in-browser environment or the CLI. When you're ready, you can complete the app delivery process (adding screenshots, keywords, video, descriptions, and other assets) in the App store and submit the project for approval by Apple or into production on Android.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <table class="table">  
+                            <thead>  
+                              <tr> 
+                                <th></th> 
+                                <th>PhoneGap</th>  
+                                <th>AppBuilder</th>  
+                              </tr>  
+                            </thead>  
+                            <tbody>  
+                              <tr>
+                                <td class="gray">Support for iOS, Android, and Windows Phone App Stores</td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>                  
+                              </tr> 
+                              <tr>
+                                <td class="gray">Automated delivery of app assets to the App Stores</td>  
+                                <td> </td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>                  
+                              </tr>  
+                              <tr>
+                                <td class="gray">App asset creation and management tools</td>  
+                                <td> </td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>                             
+                              </tr>
+                                                         
+                            </tbody>  
+                        </table> 
                     </div>
                 </div>
             </div>
@@ -250,7 +481,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                     <div class="team-member">
                         <img src="img/team/jlooper.jpg" class="img-responsive img-circle" alt="">
                         <h4>Jen Looper</h4>
@@ -265,7 +496,22 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/tjvantoll.jpg" class="img-responsive img-circle" alt="">
+                        <h4>TJ Van Toll</h4>
+                        <p class="text-muted">TJ is TJ</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="http://www.twitter.com/tjvantoll"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="http://www.github.com/tjvantoll"><i class="fa fa-github"></i></a>
+                            </li>
+                            <li><a href="http://www.linkedin.com/profile/view?id=9540772"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
                     <div class="team-member">
                         <img src="img/team/gsumner.jpg" class="img-responsive img-circle" alt="">
                         <h4>Gabe Sumner</h4>
@@ -290,8 +536,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">More Information</h2>
-                    <h3 class="section-subheading text-muted">Direct customers to more info or include contact form here.</h3>
+                    <a href="http://platform.telerik.com"><img src="img/AB-banner.jpg"/></a>
                 </div>
             </div>
             

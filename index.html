@@ -92,17 +92,24 @@
                 </div>
             </div>
 
+            <!-- I would open up this article with “PhoneGap vs. AppBuilder” in a big h1, as that's what this article is about. At a glance it appears this article is comparing three things (PhoneGap, AppBuilder, and Cordova), which it isn't, and we want this to be as clear as possible. Personally I'd remove the “What's the Difference?” heading, as I think the opening description can stand on its own without a heading. -->
+
+            <!-- Along the same lines, don't present images of AppBuilder, PhoneGap, and Cordova side by side. Only feature AppBuilder and PhoneGap prominently. You can include a picture of Cordova if you'd like under “Based on Cordova”. -->
+
             <div class="row text-center">
                 <div class="col=md-12">
                     <h4>Based on Cordova</h4>
                     <p class="text">PhoneGap is a distribution of Apache Cordova. Cordova powers PhoneGap, just like WebKit powers Chrome and Safari. AppBuilder is a platform that supports Cordova APIs and enables many different ways of building and distributing apps. Both PhoneGap and AppBuilder feature the integration of Cordova plugins like the accelerometer, camera, compass or the file system to access cross-platform native functionality. You also can use community-built Cordova custom plugins for added functionality such as bar code scanners and iBeacon readers. You can build great hybrid mobile apps using any of these tools. This site, built by members of the Developer Relations team at Telerik, is designed to help you differentiate between them.</p>
                 </div>
+
+<!-- WebKit doesn't power Chrome; Blink does -->
+
             </div>
             <div class="row text-center">
                 <div class="col-md-4">
                     <img src="img/logos/appbuilder.png" alt="AppBuilder">
                     <h4 class="service-heading"><a href="http://www.telerik.com/appbuilder" target="_blank">AppBuilder</a></h4>
-                    <p class="text-muted">Telerik AppBuilder incorporates an extensive set of tools to build apps for iOS, Android and Windows Phone using a variety of strategies including the CLI, building in-browser, desktop apps, or as plugins for your preferred IDE.</p>
+                    <p class="text-muted">Telerik AppBuilder incorporates an extensive set of tools to build apps for iOS, Android and Windows Phone using a variety of strategies including a CLI, building in-browser, desktop apps, and plugins for your preferred IDE.</p>
                 </div>
                 <div class="col-md-4">                       
                     <img src="img/logos/cordova.png" alt="Cordova">
@@ -143,8 +150,11 @@
                    
                     <div class="portfolio-caption">
                         <h4>AppBuilder</h4>
-                        <p class="text-muted">AppBuilder offers an integrated solution to deliver mobile apps from concept to App store. You can develop apps using the CLI, the in-browser Platform, Sublime Text plugins, Visual Studio plugins or the Windows client. You can start your app work in the CLI, push to a Github repository, import that repository into the in-browser Platform, and continue work there.</p>
+                        <p class="text-muted">AppBuilder offers an integrated solution to deliver mobile apps from concept to App store. You can develop apps using the CLI, the in-browser Platform, Sublime Text plugins, Visual Studio plugins or the Windows client. You can start your app work in the CLI, push to a GitHub repository, import that repository into the in-browser Platform, and continue work there.</p>
                     </div>
+
+<!-- Although they're kind of hidden, we have links for all of our clients (e.g. http://www.telerik.com/appbuilder/windows-client). You should use them here. -->
+
                 </div>
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3">
@@ -208,6 +218,8 @@
         </div>
     </section>
 
+<!-- “Desktop App” is tricky because our Windows Client technically is a desktop app. Maybe split this into Windows App (and check both) and OS X App (and check only PhoneGap)? -->
+
     <section id="build" class="bg-light-gray">
         <div class="container">
             <div class="row">
@@ -223,7 +235,7 @@
                    
                     <div class="portfolio-caption">
                         <h4>PhoneGap Build</h4>
-                        <p class="text-muted">PhoneGap developers might choose to use PhoneGap Build to build a testable and deployable version of their app. Using PhoneGap Build's web site, you upload a project's web assets in .zip format and the service compiles and packages an app. The developer then receives the download URLs for all platforms to test the app on a device. Alternately, the developer can configure the service to point to an opensource git repository and perform builds from that endpoint.</p>
+                        <p class="text-muted">PhoneGap developers might choose to use PhoneGap Build to build a testable and deployable version of their app. Using PhoneGap Build's web site, you upload a project's web assets in .zip format and the service compiles and packages an app. The developer then receives the download URLs for all platforms to test the app on a device. Alternately, the developer can configure the service to point to an open source git repository and perform builds from that endpoint.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 portfolio-item">
@@ -234,6 +246,9 @@
                         <h4>AppBuilder</h4>
                         <p class="text-muted">Depending on how you prefer to develop your app, AppBuilder offers several different ways to build your app from code to deployable app. You can use the CLI commands to build a version of your app onto your local machine, or use the in-browser toolset to click 'build' to build a version of your app to install in the Companion App or directly to your device. Visual Studio users can build from that environment, as can Windows client users.</p>
                     </div>
+
+<!-- This is the first mention of the companion app and it's not defined, so I think readers will have no idea what it is. You might want to omit the companion app here and wait for the testing section, as building for the companion app isn't really a “build”. -->
+
                 </div>
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3">
@@ -290,7 +305,7 @@
                    
                     <div class="portfolio-caption">
                         <h4>PhoneGap Syncing</h4>
-                        <p class="text-muted">When enabled in PhoneGap Build, "hydration" is available to PhoneGap app developers. Using Hydration, updates are pushed directly to the application installed on a device.Once a developer uploads a new build the end user of the application will be notified when restarting the application. Using the PhoneGap App, syncing occurs over wireless connections when you pair your computer to the installed app, which acts as a container for your app.</p>
+                        <p class="text-muted">When enabled in PhoneGap Build, "hydration" is available to PhoneGap app developers. Using Hydration, updates are pushed directly to the application installed on a device. Once a developer uploads a new build the end user of the application will be notified when restarting the application. Using the PhoneGap App, syncing occurs over wireless connections when you pair your computer to the installed app, which acts as a container for your app.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 portfolio-item">
@@ -302,6 +317,11 @@
                         <p class="text-muted">LiveSync enables you to see your code changes in real-time on connected mobile devices. When you deploy your application on connected physical or virtual devices, you can refresh your changes automatically by saving your changes. When you deploy your application in the AppBuilder Companion App on remote devices, you can refresh your changes by tapping and holding three fingers.</p>
                     </div>
                 </div>
+
+<!-- If I understand hydration correctly (which I'm not sure I do) it's not so much a development tool as much as it is a testing tool. Their docs even say that “Once a developer upload a new build the end user (e.g. tester)...”. When I tried Hydration a year or so ago I remember not being impressed.
+
+LiveSync is a much more powerful tool because it lets you update apps without closing them and reopening them. With the CLI you can set the --watch flag to make your app work like LiveReload. But despite LiveSync being far more powerful, at a glance, this section makes PhoneGap seem like they have a better solution because they have more check boxes. I'm not sure Hydration can do all of those things, and I'd add a few categories to cover some of the things LiveSync can do and PhoneGap can't— for instance a CLI-based watcher, managing which files can be LiveSync'd (with .abignore), a gesture to trigger the refresh, etc. -->
+
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3">
                         <table class="table">  
@@ -362,9 +382,18 @@
                    
                     <div class="portfolio-caption">
                         <h4>AppBuilder</h4>
-                        <p class="text-muted">AppBuilder offers out-of-the-box a large selection of simulation options, including the ability to easily view many device sizes and types as well as Windows Phone. You can view an app's behavior using AppBuilder's built-in simulators or emulate the app using native simulators associated with Android, Windows Phone, and Xcode. In addition, when you're ready to test on device, AppBuilder offers the Companion App, a way for you to test your app on a device without provisioning, which eases iOS development in particular. Appbuilder includes several options for debugging yor app in a browser. You can use built-in developer tools to check javascript performance by inspecting the code in a browser on your local machine. Similar to PhoneGap, you can debug your app using Chrome or Safari developer tools or native software solutions. In addition, AppBuilder offers a suite of sophisticated testing tools. The new Test Portal allows you to write JavaScript test scripts and run them on devices in the cloud, greatly expanding the number of virtual devices on which to test apps.</p>
+                        <p class="text-muted">AppBuilder offers out-of-the-box a large selection of simulation options, including the ability to easily view many device sizes and types as well as Windows Phone. You can view an app's behavior using AppBuilder's built-in simulators or emulate the app using native simulators associated with Android, Windows Phone, and Xcode. In addition, when you're ready to test on device, AppBuilder offers the Companion App, a way for you to test your app on a device without provisioning, which eases iOS development in particular. AppBuilder includes several options for debugging your app in a browser. You can use built-in developer tools to check JavaScript performance by inspecting the code in a browser on your local machine. Similar to PhoneGap, you can debug your app using Chrome or Safari developer tools or native software solutions. In addition, AppBuilder offers a suite of sophisticated testing tools. The new Test Portal allows you to write JavaScript test scripts and run them on devices in the cloud, greatly expanding the number of virtual devices on which to test apps.</p>
                     </div>
                 </div>
+
+<!-- Overall I found this section really hard to follow as there is a lot of text for both PhoneGap and AppBuilder. Consider using bulleted lists, or multiple paragraphs to make this section more digestible. Each of the tools that you mention should have links so people can do further research, as you only (rightly) give a brief explanation here. Rob has a few articles on TDN that talk running AppBuilder apps on the native emulators for instance. -->
+
+<!-- Device cloud is a feature of the Platform and not AppBuilder. I would omit this here because of that. You might want to have an “integration” section where you can talk about the Platform and maybe PhoneGap Enterprise. -->
+
+<!-- Our simulator is far superior to Ripple and I feel like that needs to be more immediately apparent here. -->
+
+<!-- PhoneGap has their Developer App that works pretty much exactly like our Companion App, and I don't believe you mention PhoneGap's app here. -->
+
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3">
                         <table class="table">  
@@ -421,7 +450,9 @@
                 <div class="col-md-6 col-sm-6 portfolio-item">
                     
                     <img src="img/portfolio/PG-ripple.png" class="img-responsive" alt="">
-                   
+
+<!-- Why is there a Ripple picture here? -->
+
                     <div class="portfolio-caption">
                         <h4>PhoneGap</h4>
                         <p class="text-muted">Once your app is complete, you can either build the app via native tools like Xcode and Android Studio or use PhoneGap build to deliver to you a properly-provisioned file. You will then deliver that file to the various app stores (iOS, Android, or Windows Phone) manually. Then you can complete the delivery of the app into production by adding the app assets into the various app stores.</p>
@@ -543,7 +574,13 @@
         </div>
     </section>
 
-    
+    <!-- This is a great start. I'm trying to think of other things to add. One would be plugins, as PhoneGap has https://build.phonegap.com/plugins and we have our marketplace. Our plugin marketplace and the tools we offer to manage plugins is probably our single biggest competitive advantage at this point.
+
+    Another good section might be integrations (or some name like that), as the Telerik Platform should be included somewhere in this guide. AppManager, the device cloud, AppFeedback, Backend Services, Analytics, etc. We have a much better story to tell there.
+
+    Let's see... what else.... AppBuilder has a lot of good sample apps. AppBuilder has a lot of little helpful things (all the stuff on .abproject) that you get a nice interface to manage, instead of dealing with arcane configuration files like you do with PhoneGap. Our docs are far more comprehensive.
+
+    In general my feedback would be to include a lot more links and pictures. You're not going to be able to provide in-depth explanations of everything, so I think this guide is most helpful as a starting point for someone's research. We have a lot of good content out there and we should leverage it. -->
 
     <footer>
         <div class="container">

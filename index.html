@@ -48,7 +48,6 @@
                 <a class="navbar-brand page-scroll" href="#page-top"><img src="img/telerik-progress-logo-reversed.png" class="img-responsive" alt="Telerik"/></a>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
@@ -61,7 +60,7 @@
                         <a class="page-scroll" href="#build">Build</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#plugins">Integrate Plugins</a>
+                        <a class="page-scroll" href="#plugins">Plugins</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#sync">Sync</a>
@@ -223,7 +222,7 @@
             </div>
         </div>
     </section>
-
+    <!-- Build section -->
     <section id="build" class="bg-light-gray">
         <div class="container">
             <div class="row">
@@ -281,8 +280,80 @@
                               <tr>  
                                 <td class="gray">Build from Windows client</td><td> </td>  
                                 <td class="centered"><i class="fa fa-check"></i></td>                         
+                              </tr>
+                              <tr>  
+                                <td class="gray">Build using native tools</td><td class="centered"><i class="fa fa-check"></i></td>  
+                                <td class="centered"></td>                         
                               </tr> 
                                
+                            </tbody>  
+                        </table> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plugin section -->
+    <section id="plugins" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Plugins</h2>
+                    <h3 class="section-subheading text-muted">I want to use Cordova plugins to enhance my app. What are my options?</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 portfolio-item">
+                    
+                    <img src="img/portfolio/PG-plugins.png" class="img-responsive" alt="">
+                   
+                    <div class="portfolio-caption">
+                        <h4>PhoneGap</h4>
+                        <p class="text-muted">PhoneGap developers are able to install plugins in their apps via the CLI, via the config file or from an external JavaScript file. If using PhoneGap Build, core PhoneGap plugins and third party plugins are supported if they are whitelisted by PhoneGap.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 portfolio-item">
+                    
+                        <img src="img/portfolio/AB-plugins.png" class="img-responsive" alt="">
+                   
+                    <div class="portfolio-caption">
+                        <h4>AppBuilder</h4>
+                        <p class="text-muted">AppBuilder offers a curated list of Cordova Plugins that can be imported into an app project either in the in-browser client or via the CLI. Core Cordova plugins such as the Camera and InAppBrowser are automatically included in an app project but can be removed and managed by the developer. Other non-curated third party plugins can also be incorporated into AppBuilder projects and built ad hoc.</p>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <table class="table">  
+                            <thead>  
+                              <tr> 
+                                <th></th> 
+                                <th>PhoneGap</th>  
+                                <th>AppBuilder</th>  
+                              </tr>  
+                            </thead>  
+                            <tbody>                               
+                              <tr>
+                                <td class="gray">Curated list of plugins available</td>  
+                                <td class="centered"> </td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>                  
+                              </tr>  
+                              <tr>
+                                <td class="gray">Integrate plugins from browser</td>  
+                                <td class="centered"> </td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>                             
+                              </tr>
+                              <tr>
+                                <td class="gray">Integrate plugins via CLI</td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>                  
+                              </tr>
+                              <tr>  
+                                <td class="gray">Build using any third-party plugin</td>  
+                                <td class="centered"> </td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>  
+                              </tr>                               
                             </tbody>  
                         </table> 
                     </div>
@@ -307,7 +378,10 @@
                    
                     <div class="portfolio-caption">
                         <h4>PhoneGap Syncing</h4>
-                        <p class="text-muted">When enabled in PhoneGap Build, "hydration" is available to PhoneGap app developers. Using Hydration, updates are pushed directly to the application installed on a device. Once a developer uploads a new build the end user of the application will be notified when restarting the application. Alternately, you can sync changes using the PhoneGap App, where syncing occurs over wireless connections when you pair your computer to the installed app.</p>
+                        <p class="text-muted">
+                            When enabled in PhoneGap Build, "hydration" is available to PhoneGap app developers. Using Hydration, updates are pushed directly to the application installed on a device. Once a developer uploads a new build the end user of the application will be notified when restarting the application. To see changes, the app needs to be restarted.
+                            Alternately, you can sync changes using the PhoneGap App, where syncing occurs over wireless connections when you pair your computer to the installed app.
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 portfolio-item">
@@ -316,15 +390,11 @@
                    
                     <div class="portfolio-caption">
                         <h4>AppBuilder LiveSync</h4>
-                        <p class="text-muted">LiveSync enables you to see your code changes in real-time on connected mobile devices. When you deploy your application on connected physical or virtual devices, you can refresh your changes automatically when saving your work. When you deploy your application in the AppBuilder Companion App on remote devices, you can refresh your changes by tapping and holding three fingers.</p>
+                        <p class="text-muted">When you are working locally with a simulator, changes to your code always appear immediately after you save. To view changes on a device, however, you can leverage AppBuilder's LiveSync service. LiveSync enables you to see your code changes in real-time on connected mobile devices. You can build your app in debug mode via the in-browser client or with the CLI to produce a QR code used to install the app onto your phone. Once you have deployed your app to your device and want to see a change, tap and hold three fingers on the screen and your new version will be downloaded and the app refreshed. LiveSync can also be used with a three-finger tap gesture using the Companion App. You can also manage which files should or should not be synched by including them in the .abignore file. </p>
                     </div>
                 </div>
 
-<!-- If I understand hydration correctly (which I'm not sure I do) it's not so much a development tool as much as it is a testing tool. Their docs even say that “Once a developer upload a new build the end user (e.g. tester)...”. When I tried Hydration a year or so ago I remember not being impressed.
-
-LiveSync is a much more powerful tool because it lets you update apps without closing them and reopening them. With the CLI you can set the --watch flag to make your app work like LiveReload. But despite LiveSync being far more powerful, at a glance, this section makes PhoneGap seem like they have a better solution because they have more check boxes. I'm not sure Hydration can do all of those things, and I'd add a few categories to cover some of the things LiveSync can do and PhoneGap can't— for instance a CLI-based watcher, managing which files can be LiveSync'd (with .abignore), a gesture to trigger the refresh, etc. -->
-
-                <div class="row">
+               <div class="row">
                     <div class="col-md-6 col-md-offset-3">
                         <table class="table">  
                             <thead>  
@@ -343,12 +413,17 @@ LiveSync is a much more powerful tool because it lets you update apps without cl
                               <tr>
                                 <td class="gray">Manual refreshing on device on code change</td>  
                                 <td class="centered"><i class="fa fa-check"></i></td>  
-                                <td class="centered"><i class="fa fa-check"></i></td>                             
+                                <td class="centered"><i class="fa fa-check"></i></td>             
                               </tr>
                               <tr>  
                                 <td class="gray">Wireless refreshing on device on code change</td>  
                                 <td class="centered"><i class="fa fa-check"></i></td>  
-                                <td> </td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>
+                              </tr> 
+                              <tr>  
+                                <td class="gray">Control over which code is synched</td>  
+                                <td class="centered"> </td>  
+                                <td class="centered"><i class="fa fa-check"></i></td>
                               </tr>                                
                             </tbody>  
                         </table> 
@@ -375,7 +450,13 @@ LiveSync is a much more powerful tool because it lets you update apps without cl
                    
                     <div class="portfolio-caption">
                         <h4>PhoneGap Emulation</h4>
-                        <p class="text-muted">There are several ways to test an app's behavior. By typing 'phonegap emulate ios' in the command line you can see how your app looks on an iOS simulator, and similarly for Android emulators. PhoneGap Build offers a quick way to download builds for testing on a device, but you do need to include provisioning profiles for your iOS testers. The new PhoneGap app allows wireless emulation. Also available is an emulation service where you can enter a url and use Chrome's developer tools to debug. This emulation requires the Chrome browser and the Ripple emulation extension to be installed. Alternately, simply using Chrome's Dev Tools with the Device Emulation extension installed helps considerably to test your app. For on-device debugging you can make use of Safari's Developer Tools to debug remote code for iOS apps. For other devices, you can also use Weinre to get an idea of bugs that occur on a device. Finally, you can always use native development tools such as Xcode's console and Android's 'adb' toolset to debug.</p>
+                        <p class="text-muted">There are several ways to test an app's behavior.<br/> <br/>
+
+                        <b>Simulation</b>: By typing 'phonegap emulate ios' in the command line you can see how your app looks on an iOS simulator, and similarly for Android emulators. <br/><br/>
+
+                        <b>Test on a device</b>: PhoneGap Build offers a quick way to download builds for testing on a device, but you do need to include provisioning profiles for your iOS testers. <br/><br/>
+
+                        <b>Test using an app and browser</b>: The PhoneGap app allows wireless emulation between your local app and its installation on device. You can enter a url and use Chrome's developer tools to debug. This emulation requires the Chrome browser and the Ripple emulation extension to be installed. Alternately, you can use Chrome's Dev Tools with the Device Emulation extension installed. For on-device debugging you can make use of Safari's Developer Tools to debug remote code for iOS apps. For other devices, you can also use Weinre to get an idea of bugs that occur on a device. Finally, you can always use native development tools such as Xcode's console and Android's 'adb' toolset to debug.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 portfolio-item">
@@ -384,17 +465,16 @@ LiveSync is a much more powerful tool because it lets you update apps without cl
                    
                     <div class="portfolio-caption">
                         <h4>AppBuilder</h4>
-                        <p class="text-muted">AppBuilder offers out-of-the-box a large selection of simulation options, including the ability to easily view many device sizes and types as well as Windows Phone. You can view an app's behavior using AppBuilder's built-in simulators or emulate the app using native simulators associated with Android, Windows Phone, and Xcode. In addition, when you're ready to test on device, AppBuilder offers the Companion App, a way for you to test your app on a device without provisioning, which eases iOS development in particular. AppBuilder includes several options for debugging your app in a browser. You can use built-in developer tools to check JavaScript performance by inspecting the code in a browser on your local machine. Similar to PhoneGap, you can debug your app using Chrome or Safari developer tools or native software solutions. In addition, AppBuilder offers a suite of sophisticated testing tools. The new Test Portal allows you to write JavaScript test scripts and run them on devices in the cloud, greatly expanding the number of virtual devices on which to test apps.</p>
+                        <p class="text-muted">AppBuilder offers out-of-the-box a large selection of simulation options.<br/><br/>
+                        <b>Simulator</b>: 
+                        AppBuilder includes a full-featured simulator available via the CLI or in-browser with which you can view how your app looks and behaves in many device sizes and types.<br/><br/>
+                        <b>Emulator</b>: Alternately, test your app using native emulators associated with Android, Windows Phone, and Xcode.<br/><br/>
+                        <b>Test in an app</b>: AppBuilder also offers the Companion App, a way for you to test your app on a device without provisioning, which eases iOS development in particular. <br/><br/>
+                        <b>Test in a browser</b>: AppBuilder includes several options for debugging your app in a browser. You can use built-in developer tools to check JavaScript performance by inspecting the code in a browser on your local machine. Similar to PhoneGap, you can debug your app using Chrome or Safari developer tools.</p>
                     </div>
                 </div>
 
-<!-- Overall I found this section really hard to follow as there is a lot of text for both PhoneGap and AppBuilder. Consider using bulleted lists, or multiple paragraphs to make this section more digestible. Each of the tools that you mention should have links so people can do further research, as you only (rightly) give a brief explanation here. Rob has a few articles on TDN that talk running AppBuilder apps on the native emulators for instance. -->
 
-<!-- Device cloud is a feature of the Platform and not AppBuilder. I would omit this here because of that. You might want to have an “integration” section where you can talk about the Platform and maybe PhoneGap Enterprise. -->
-
-<!-- Our simulator is far superior to Ripple and I feel like that needs to be more immediately apparent here. -->
-
-<!-- PhoneGap has their Developer App that works pretty much exactly like our Companion App, and I don't believe you mention PhoneGap's app here. -->
 
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3">
@@ -427,11 +507,7 @@ LiveSync is a much more powerful tool because it lets you update apps without cl
                                 <td class="centered"><i class="fa fa-check"></i></td>  
                                 <td class="centered"><i class="fa fa-check"></i></td>  
                               </tr>  
-                              <tr>  
-                                <td class="gray">Test in the cloud</td>  
-                                <td> </td>  
-                                <td class="centered"><i class="fa fa-check"></i></td>  
-                              </tr>                                
+                                                             
                             </tbody>  
                         </table> 
                     </div>

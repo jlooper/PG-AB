@@ -270,10 +270,10 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em;
     }
+    
 }
-
 header {
-    padding: 70px 0;
+    padding: 100px 0;
 }
 
 header .intro-text .intro-lead-in {
